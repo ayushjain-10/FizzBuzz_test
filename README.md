@@ -1,7 +1,5 @@
 # Fizz Buzz Unit Tests
 
-Fizz Buzz starter code for FEW 2.1
-
 The goal of this project is to write unit tests for Fizz Buzz using Jest.
 
 ## Background
@@ -41,51 +39,9 @@ Edit `package.json`:
 
 Write your tests in `tests/test.js`. 
 
-A typcial test with Jest looks like: 
-
-```JavaScript
-test('Sanity check', () => {
-
-})
-```
-
 Run your tests with: 
 
 `npm run test`
-
-The example test above would be "passing" since it does not throw an error. 
-
-Add an assertion: 
-
-```JavaScript
-test('Sanity check', () => {
-  expect(2+2).toBe(5)
-})
-```
-
-Run the test. Here the test fails since 2+2 != 5. 
-
-Fix the math and run the test again. This time the test should pass. 
-
-## Testing fizzbuzz
-
-To test the fizzbuzz you'll need to import it into `tests/test.js`. Using a node.js environment you can use: 
-
-`const fb = require('../fizzbuzz')`
-
-From here you can access any of the methods and properties exported from `fizzbuzz.js`. 
-
-`fb.fizzbuzz(16)`
-
-or 
-
-`fb.isFizzy(4)`
-
-### What to test?
-
-The `fizzbuzz.js` lib is made up of three constants, and four functions. You should write a test for each of these. 
-
-Read the documentation closely and not the parameters and return values. Unit testing is all about inputs and outputs. Your tests should prove the output for a given input. 
 
 ## Challenges 
 
@@ -110,34 +66,3 @@ You should test all of the properties in returned object.
 The fizzbuzz functio might look like this: 
 
 `fizzBuzz(count, fizzOn = 3, buzzOn = 5)`
-
-Use you unit tests to make sure the code is still working as you make changes. 
-
-## Checking Coverage
-
-How much of your code is covered by the test you wrote? Pretty good question huh?
-
-Jest will automate this for you. 
-
-`npx jest --coverage`
-
-<!-- > -->
-
-This should provide output similar to: 
-
-```
-----------|----------|----------|----------|----------|-------------------|
-File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
-----------|----------|----------|----------|----------|-------------------|
-All files |    96.88 |      100 |       80 |    96.55 |                   |
- index.js |    96.88 |      100 |       80 |    96.55 |                70 |
-----------|----------|----------|----------|----------|-------------------|
-```
-
-This tells you what % of code statements were covered by the tests. What % of code branches were covered, these are if else, switch cases etc. What % of functions were tested. What % of lines of code were tested, and line numbers for lines of code that were not tested. 
-
-Check coverage and identify what has not been tested.
-
-
-
-
